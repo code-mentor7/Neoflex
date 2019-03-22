@@ -19,7 +19,7 @@
 	<div class="container" style=" width: 100%;">
 		<div class="navbar-header">
 			<a href="<?php echo base_url();?>index.php?browse/home" class="navbar-brand">
-				<img src="<?php echo base_url();?>/assets/global/logo.png" style=" height: 32px;margin-right: 50px;" />
+				<img src="<?php echo base_url();?>/assets/global/logo.png" style="height: 70px;margin-right: 50px;margin-top: -25px;" />
 			</a>
 			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 				<span class="icon-bar"></span>

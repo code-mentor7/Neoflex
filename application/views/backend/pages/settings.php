@@ -103,7 +103,7 @@
 								<span class="help"></span>
 								<div class="controls">
 									<input type="file" name="logo" />
-									<img src="<?php echo base_url();?>assets/global/logo.png" height="20" />
+									<img src="<?php echo base_url();?>assets/global/logo.png" height="60" />
 								</div>
 							</div>
 

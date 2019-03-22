@@ -20,7 +20,7 @@
                     <!-- hosted -->
                     <div id="hosted_tv" class="hosted_tv tv_category show">
                         <div class="form-group mb-3">
-                            <label for="title">Tv Series Trailer URL</label>
+                            <label for="title">Tv Series URL</label>
                             <input type="text" class="form-control" id = "series_trailer_url" name="series_trailer_url">
                         </div>
                     </div>

@@ -6,7 +6,7 @@
                    <!-- LOGO -->
                    <a href="<?php echo base_url('index.php?admin'); ?>" class="logo text-center">
                        <span class="logo-lg">
-                           <img src="<?php echo base_url();?>assets/global/logo.png" alt="" height="100">
+                           <img src="<?php echo base_url();?>assets/global/logo.png" style="margin-left: -22px;" alt="" height="100">
                        </span>
 
                        <!-- We should use a small logo for this image tag -->

@@ -1,0 +1,22 @@
+- Go to Website Settings from Configuration menu in admin panel
+- Move to the section 'Update Product' on that page
+- Upload the file 'update_1.2.zip' from your copy of Neoflex app downloaded from codecanyon
+- Hit the button 'install update'
+
+
+If you've done it successfully then you are ready to go further:
+
+1. Copy the file database.php which is located at application > config > database.php and keep it in another place, like desktop or anywhere outside of the application.
+
+2. Open the latest Neoflex file which you've downloaded from Codecanyon and copy all, EXCEPT the "assets" folder and replace with your existing Neoflex files.
+
+3. After doing that successfully, copy the database.php file which you've kept in another place (You did it at Step 1) and replace it with the application's database.php file. You will find it inside application > config > database.php.
+
+4. Now the next step is: open the file name "routes.php" and move to line number 52 and change the default controller to install to home.
+ 
+
+
+- That's it
+
+PLEASE MAKE SURE THAT YOU ARE RUNNING THE 1.1 VERSION BEFORE UPDATING TO 1.2
+IF YOU ARE ALREADY RUNNING THE 1.2 VERSION THERE IS NO NEED TO UPDATE… Thank You

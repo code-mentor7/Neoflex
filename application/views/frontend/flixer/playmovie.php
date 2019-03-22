@@ -70,7 +70,8 @@
 					<?php elseif (get_video_extension($row['url']) == 'webm'): ?>
 						<source src="<?php echo $row['url']; ?>" type="video/webm">
 					<?php else: ?>
-						<h4><?php get_phrase('video_url_is_not_supported'); ?></h4>
+                        <source src="<?php echo base_url();?>assets/global/local/movie_origin/<?php echo $row['movie_id'] . '.mp4'; ?>" type="video/mp4">
+<!--						<h4>--><?php //get_phrase('video_url_is_not_supported'); ?><!--</h4>-->
 					<?php endif; ?>
 					<track kind="captions" label="English captions" src="<?php echo base_url('assets/global/movie_caption/'.$row['movie_id'].'.vtt'); ?>" srclang="en" default>
 					</video>
@@ -171,7 +172,8 @@
 					<?php elseif (get_video_extension($row['url']) == 'webm'): ?>
 						<source src="<?php echo $row['trailer_url']; ?>" type="video/webm">
 					<?php else: ?>
-						<h4><?php get_phrase('video_url_is_not_supported'); ?></h4>
+                        <source src="<?php echo base_url();?>assets/global/local/movie_trailer/<?php echo $row['movie_id'] . '.mp4'; ?>" type="video/mp4">
+<!--						<h4>--><?php //get_phrase('video_url_is_not_supported'); ?><!--</h4>-->
 					<?php endif; ?>
 					</video>
 

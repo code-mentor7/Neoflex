@@ -267,12 +267,12 @@ class Crud_model extends CI_Model {
 		$data['title']				=	$this->input->post('title');
 		$data['description_short']	=	$this->input->post('description_short');
 		$data['description_long']	=	$this->input->post('description_long');
-		$data['year']				  =	$this->input->post('year');
+		$data['year']				=	$this->input->post('year');
 		$data['rating']				=	$this->input->post('rating');
 		$data['genre_id']			=	$this->input->post('genre_id');
 		$data['featured']			=	$this->input->post('featured');
-		$data['url']				  =	$this->input->post('url');
-		$data['trailer_url']  =	$this->input->post('trailer_url');
+		$data['url']				=	$this->input->post('url');
+		$data['trailer_url']        =	$this->input->post('trailer_url');
 
 		$actors						=	$this->input->post('actors');
 		$actor_entries				=	array();
@@ -287,6 +287,9 @@ class Crud_model extends CI_Model {
 		$movie_id = $this->db->insert_id();
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/movie_thumb/' . $movie_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/movie_poster/' . $movie_id . '.jpg');
+
+		move_uploaded_file($_FILES['local_movie_trailer']['tmp_name'], 'assets/global/local/movie_trailer/' . $movie_id . '.mp4');
+		move_uploaded_file($_FILES['local_movie_origin']['tmp_name'], 'assets/global/local/movie_origin/' . $movie_id . '.mp4');
 
 	}
 

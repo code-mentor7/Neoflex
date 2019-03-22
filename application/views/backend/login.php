@@ -93,7 +93,6 @@
 
 
     <!-- jquery -->
-    <script src="<?php echo base_url('assets/backend/login/jquery-3.3.1.min.js'); ?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script type="text/javascript">
         function toggleView(elem) {

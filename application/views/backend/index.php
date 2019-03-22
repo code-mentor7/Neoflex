@@ -6,6 +6,7 @@
 		<?php include 'metas.php'; ?>
 		<!-- all the css files -->
 		<?php include 'css.php'; ?>
+        <script src="<?php echo base_url('assets/backend/login/jquery-3.3.1.min.js'); ?>"></script>
 	</head>
 	<body class="">
 		<div class="wrapper">

@@ -86,15 +86,16 @@
 					<div class="form-group mb-3">
 						<label for="year">Publishing Year</label>
 						<span class="help">- year of publishing time</span>
-						<select class="form-control select2" id="year" name="year">
-							<?php for ($i = date("Y"); $i > 2000 ; $i--):?>
-							<option
-								<?php if ( $movie_detail->year == $i) echo 'selected';?>
-								value="<?php echo $i;?>">
-								<?php echo $i;?>
-							</option>
-							<?php endfor;?>
-						</select>
+                        <input type="number" class="form-control" value="<?php echo $movie_detail->year ?>" id="year" name="year" min="1900" max="2900">
+<!--						<select class="form-control select2" id="year" name="year">-->
+<!--							--><?php //for ($i = date("Y"); $i > 2000 ; $i--):?>
+<!--							<option-->
+<!--								--><?php //if ( $movie_detail->year == $i) echo 'selected';?>
+<!--								value="--><?php //echo $i;?><!--">-->
+<!--								--><?php //echo $i;?>
+<!--							</option>-->
+<!--							--><?php //endfor;?>
+<!--						</select>-->
 					</div>
 
 					<div class="form-group mb-3">

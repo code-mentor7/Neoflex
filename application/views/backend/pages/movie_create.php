@@ -99,13 +99,14 @@
                     <div class="form-group mb-3">
                         <label for="year">Publishing Year</label>
                         <span class="help">- year of publishing time</span>
-                        <select class="form-control select2" id="year" name="year">
-                            <?php for ($i = date("Y"); $i > 2000; $i--): ?>
-                                <option value="<?php echo $i; ?>">
-                                    <?php echo $i; ?>
-                                </option>
-                            <?php endfor; ?>
-                        </select>
+                        <input type="number" class="form-control" id="year" name="year" value="1900" min="1900" max="2900">
+<!--                        <select class="form-control select2" id="year" name="year">-->
+<!--                            --><?php //for ($i = date("Y"); $i > 2000; $i--): ?>
+<!--                                <option value="--><?php //echo $i; ?><!--">-->
+<!--                                    --><?php //echo $i; ?>
+<!--                                </option>-->
+<!--                            --><?php //endfor; ?>
+<!--                        </select>-->
                     </div>
 
                     <div class="form-group mb-3">

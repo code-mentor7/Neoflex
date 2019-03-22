@@ -7,10 +7,33 @@
 	                    <label for="title">Tv Series Title</label>
 	                    <input type="text" class="form-control" id = "title" name="title">
 	                </div>
-	                <div class="form-group mb-3">
-	                    <label for="title">Tv Series Trailer URL</label>
-	                    <input type="text" class="form-control" id = "series_trailer_url" name="series_trailer_url">
-	                </div>
+                    <!-- Select TV series if it is hosted or local -->
+                    <div class="form-group mb-3">
+                        <label for="genre_id">Tv Series Category</label>
+                        <span class="help">- hosted url or local</span>
+                        <select class="form-control select2" id="tv_category_id" name="tv_category_id">
+                            <option value="hosted">hosted</option>
+                            <option value="local">local</option>
+                        </select>
+                    </div>
+
+                    <!-- hosted -->
+                    <div id="hosted_tv" class="hosted_tv tv_category show">
+                        <div class="form-group mb-3">
+                            <label for="title">Tv Series Trailer URL</label>
+                            <input type="text" class="form-control" id = "series_trailer_url" name="series_trailer_url">
+                        </div>
+                    </div>
+
+                    <!-- local -->
+                    <div id="local_tv" class="local_tv tv_category">
+                        <div class="form-group mb-3">
+                            <label for="local_movie_origin">Local Tv Series</label>
+                            <span class="help">- local</span>
+                            <input type="file" class="form-control" name="local_tv_series" accept="video/mp4">
+                        </div>
+                    </div>
+
 
 	                <div class="form-group mb-3">
 	                    <label for="thumb">Thumbnail</label>
@@ -98,3 +121,23 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $("#tv_category_id").change(function () {
+            $('.tv_category').toggleClass("show");
+        });
+    })
+</script>
+<style>
+    .hosted_tv {
+        display: none;
+    }
+
+    .local_tv {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>

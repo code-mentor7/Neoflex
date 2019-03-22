@@ -345,6 +345,8 @@ class Crud_model extends CI_Model {
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/series_thumb/' . $series_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/series_poster/' . $series_id . '.jpg');
 
+        move_uploaded_file($_FILES['local_tv_series']['tmp_name'], 'assets/global/local/tv_series/' . $series_id . '.mp4');
+
 	}
 
 	function update_series($series_id = '')

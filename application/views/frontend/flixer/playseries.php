@@ -107,7 +107,8 @@
 					<?php elseif (get_video_extension($row['url']) == 'webm'): ?>
 						<source src="<?php echo $row['trailer_url']; ?>" type="video/webm">
 					<?php else: ?>
-						<h4><?php get_phrase('video_url_is_not_supported'); ?></h4>
+                        <source src="<?php echo base_url();?>assets/global/local/tv_series/<?php echo $row['series_id'] . '.mp4'; ?>" type="video/mp4">
+<!--						<h4>--><?php //get_phrase('video_url_is_not_supported'); ?><!--</h4>-->
 					<?php endif; ?>
 					</video>
 
